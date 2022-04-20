@@ -1,0 +1,22 @@
+.header img:hover {
+  -webkit-transform: rotate(12360deg);
+  -webkit-transition-duration: 19s;
+
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+.header img {
+  transition: 2s;
+}
+
+.header {
+  background: linear-gradient(281deg, #2b5a2d, #4CAF50);
+  padding: 15px;
+  grid-area: h;
+
+}
+
+.header img {
+  width: 30px;
+}

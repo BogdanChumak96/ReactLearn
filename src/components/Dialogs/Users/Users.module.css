@@ -1,0 +1,38 @@
+.users__dialog__list {
+    position: relative;
+    padding-left: 30px;
+    width: 350px;
+}
+
+.users__dialog__item {
+    position: relative;
+    
+}
+.users__dialog__item {
+    margin-bottom: 20px;
+    
+}
+.users__dialog__item a{
+    color: black;
+}
+.users__dialog__item:last-child {
+    margin-top: 0;
+    
+}
+.users__dialog__item:before {
+    content: "";
+    position: relative;
+    float: left;
+    margin: 12px 25px 0 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: black;
+    
+}
+.users__dialog__list{
+    border-right: 2px solid rgb(13, 59, 33);
+}
+.active{
+    font-size: 40px;
+}

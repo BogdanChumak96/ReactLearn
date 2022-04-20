@@ -1,0 +1,26 @@
+.content {
+  grid-area: c;
+
+}
+
+.content {
+  /* padding: 15px; */
+  color: #4CAF50;
+}
+
+.content_logo {
+  margin-bottom: 10px;
+}
+
+.content_logo img {
+  height: 200px;
+  width: 100%;
+}
+
+.content_card {
+  display: flex;
+}
+
+.card_pic {
+  margin-right: 40px;
+}

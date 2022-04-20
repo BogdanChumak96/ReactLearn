@@ -1,0 +1,31 @@
+.post {
+    display: flex;
+    flex-wrap: wrap;
+    width: 260px;
+    margin-bottom: 30px;
+    color: black;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 15px;
+    font-family: arial;
+}
+
+.post img {
+    margin-top: 10px;
+    margin-right: 10px;
+
+
+}
+
+.post h5 {
+    margin-top: 26px;
+    width: 160px;
+}
+
+span {
+    margin-top: 25px;
+}
+
+/* .post img{
+    
+  } */

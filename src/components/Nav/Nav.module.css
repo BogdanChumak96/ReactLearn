@@ -1,0 +1,36 @@
+.nav {
+  background-color: #4CAF50;
+  grid-area: n;
+  padding: 15px;
+  height: 80vh;
+}
+
+ul li {
+  font-size: 30px;
+  list-style: none;
+  margin-top: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+  transition: 0.2s;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+ul li:last-child {
+  margin-top: 40px;
+}
+
+.gold {
+  text-decoration: underline;
+}
+
+.gg {
+  background-color: yellow;
+}

@@ -1,0 +1,25 @@
+.message__item{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    
+} 
+.message__ava{
+    margin-right: 100px;
+}
+.message__text{
+    position: relative;
+    z-index: 111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 86px;
+} 
+.message__bubble{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    
+}  
