@@ -3,6 +3,7 @@ import styles from './Content.module.css'
 import Posts from './Posts/Posts';
 
 const Content = (props) => {
+    
     return (
         <div>
             <div className={styles.content_wrapper}>
@@ -21,7 +22,7 @@ const Content = (props) => {
                         <h3>Web-site: this</h3>
                     </div>
                 </div>
-                <Posts posts = {props.posts} />
+                <Posts posts = {props.profilePage} addPost = {props.addPost}  newPostText = {props.newPostText}  updateNewPostText = {props.updateNewPostText}/>
             </div>
 
         </div>

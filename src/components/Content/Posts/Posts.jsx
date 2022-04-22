@@ -2,11 +2,20 @@ import React from 'react';
 import Post from './Post/Post';
 import styles from './Posts.module.css'
 
-
 const Posts = (props) => {
-    
-    let postsElements = props.posts.map( d => <Post message={d.message} likes={d.likes} />)
-   
+    console.log(typeof(props.updateNewPostText))
+    let postsElements = props.posts.map(d => <Post message={d.message} likes={d.likes} avatar={d.avatar} />)
+
+    let newPostElement = React.createRef();
+
+    const addPost = () => {
+        props.addPost()
+    }
+    let onPostChange = () => {
+        let text = newPostElement.current.value
+        props.updateNewPostText(text)
+
+    }
     return (
         <div>
             <div className={styles.myPosts}>
@@ -14,16 +23,16 @@ const Posts = (props) => {
                     <h1>My posts</h1>
                 </div>
                 <div className={styles.myPostsTextArea}>
-                    <textarea cols="30" rows="10"></textarea>
+                    <textarea onChange={onPostChange} ref={newPostElement} value={props.newPostText} />
                 </div>
                 <div className={styles.myPostsButton}>
-                    <button className={styles.button}>Send</button>
+                    <button onClick={addPost} className={styles.button}>Send</button>
                 </div>
             </div>
             <div className={styles.allPosts}>
                 {
-                  postsElements
-                }  
+                    postsElements
+                }
             </div>
         </div>
     )

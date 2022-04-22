@@ -3,8 +3,10 @@ import styles from './Users.module.css'
 import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom"
 
 const DialogItem = (props) => {
+    // console.log(props)
     return (
         <li className={styles.users__dialog__item}>
+            <img className={styles.users__dialog__ava} width="20px" src={props.avatar} alt="" />
             <NavLink to={`/dialogs/${props.id}`} >{props.name}</NavLink>
         </li>
     )
@@ -12,7 +14,7 @@ const DialogItem = (props) => {
 
 
 const Users = (props) => {
-    let dialogsElement = props.users.map(d => <DialogItem name={d.name} id={d.id} />)
+    let dialogsElement = props.users.map(d => <DialogItem name={d.name} id={d.id} avatar = {d.avatar} />)
     return (
             <div className={styles.users__dialog}>
                 <div className={styles.dialogs__header}>

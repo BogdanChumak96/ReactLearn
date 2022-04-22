@@ -5,12 +5,14 @@
   height: 80vh;
 }
 
-ul li {
+.nav ul li {
   font-size: 30px;
   list-style: none;
   margin-top: 10px;
 }
-
+.nav ul{
+  margin-bottom: 50px;
+}
 a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.9);
@@ -23,9 +25,7 @@ a:focus {
   color: rgba(0, 0, 0, 0.4);
 }
 
-ul li:last-child {
-  margin-top: 40px;
-}
+
 
 .gold {
   text-decoration: underline;
