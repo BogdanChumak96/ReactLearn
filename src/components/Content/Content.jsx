@@ -22,7 +22,10 @@ const Content = (props) => {
                         <h3>Web-site: this</h3>
                     </div>
                 </div>
-                <Posts posts = {props.profilePage} addPost = {props.addPost}  newPostText = {props.newPostText}  updateNewPostText = {props.updateNewPostText}/>
+                <Posts posts = {props.profilePage} 
+                       newPostText = {props.newPostText}  
+                       dispatch = {props.dispatch} 
+                       />
             </div>
 
         </div>

@@ -3,17 +3,18 @@ import Post from './Post/Post';
 import styles from './Posts.module.css'
 
 const Posts = (props) => {
-    console.log(typeof(props.updateNewPostText))
+  
     let postsElements = props.posts.map(d => <Post message={d.message} likes={d.likes} avatar={d.avatar} />)
 
     let newPostElement = React.createRef();
 
     const addPost = () => {
-        props.addPost()
+        props.dispatch({type : 'ADD-POST'})
     }
     let onPostChange = () => {
         let text = newPostElement.current.value
-        props.updateNewPostText(text)
+        let action = {type : 'UPDATE-NEW-POST-TEXT', newText : text}
+        props.dispatch(action)
 
     }
     return (

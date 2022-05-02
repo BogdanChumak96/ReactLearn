@@ -32,8 +32,8 @@ const App = (props) => {
               <Content 
                 profilePage = {props.state.profilePage.posts}
                 newPostText = {props.state.profilePage.newPostText}
-                addPost = {props.addPost}
-                updateNewPostText ={props.updateNewPostText}
+                
+                dispatch = {props.dispatch}
                 />} />  
             <Route exact path='/news' element='' />
             <Route exact path='/music' element='' />  
